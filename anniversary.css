@@ -1,0 +1,1443 @@
+/* Goole Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+body{
+    position: relative;
+}
+
+:root{
+--main-color:#fd4646 ;
+--text-color: #171427;
+--bg-color: #fff;
+}
+
+img{
+    width:100%;
+}
+
+body{color: var(--text-color)}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width:100%;
+    border-bottom: 1px solid black;
+}
+
+section{
+    padding:5rem 0 3rem;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top:0;
+    background: antiquewhite;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+}
+
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+}
+
+.nav-icons{
+    position:relative;
+    color:var(--text-color);
+    cursor:pointer;
+    left:10rem;
+}
+
+.cart-indicator {
+    position:relative;
+    bottom: 20px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+  }
+.btn-buy a{
+color: white;
+}
+
+
+.nav-dropdown ul{
+list-style: none;
+text-align: center;
+}
+
+.nav-dropdown ul a{
+    padding: .8rem 1.7rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width:100%;
+}
+
+.nav-dropdown{
+    display: block;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    left:5rem;
+}
+
+.nav-dropdown ul li ul{
+    width:fit-content;
+    background :rgb(192, 184, 184);;
+    position: absolute;
+    z-index:1000;
+    display:none;
+    font-size: 14px;
+}
+
+.nav-dropdown ul li a:hover{
+    color: red;
+}
+.nav-dropdown ul li:hover ul{
+    display: block;
+}
+
+.cart-icon{
+    position:relative;
+    top:.5rem;
+    font-size: 1.8rem;
+    cursor:pointer;
+}
+
+.logo{
+    font-size: 1.1rem;
+    color: rgb(229, 101, 123);
+    font-weight: 700;
+    font-style:oblique;
+}
+
+.form{
+    position: relative;
+    left: 12rem;
+}
+form input{
+width:18rem;
+height:2rem;
+border-radius: 5px;
+border: none;
+}
+
+form button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: .6px solid;
+}
+
+/* Cart */
+.cart{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:360px;
+    min-height:100vh;
+    padding:20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px  hsl(0 4% 15% / 10%);
+    transition: .3s;
+}
+
+.cart.active{
+    right:0;
+}
+
+.cart-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.cart-box{
+    display:grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.cart-img{
+    width:100px;
+    height:100px;
+    object-fit: contain;
+    padding:10px;
+}
+
+.detail-box{
+    display:grid;
+    row-gap:0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.cart-price{
+    font-weight: 500;
+    text-align: left;
+    font-size: .9rem;
+}
+
+.cart-quantity{
+    border:1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width:2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color:var(--main-color);
+    cursor:pointer;
+}
+
+.total{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display:flex;
+    margin:1.5rem auto 0 auto;
+    padding:12px 20px;
+    border:none;
+    background: var(--main-color);
+    color:var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+.btn-buy:hover{
+    background:var(--text-color)
+}
+
+.close-cart{
+    position:absolute;
+    top:1rem;
+    right:0.8rem;
+    font-size: 2rem;
+    color:var(--text-color);
+    cursor:pointer;
+}
+
+
+.header2{
+    position:fixed;
+    top:6rem;
+    padding:0;
+    margin: 0;
+    font-family: monospace;
+    width: 100%;
+    left: 0;
+    z-index: 90;
+}
+.header2 ul{
+    list-style: none;
+    background:rgb(192, 184, 184);
+    font-weight: 500;
+}
+.header2 ul li{
+display: inline-block;
+position: relative;
+font-size: 15px;
+}
+.header2 ul a{
+    display: block;
+    padding: .8rem 1.7rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.header2 ul li ul.dropdown{
+    display:block;
+  
+}
+.header2 ul li ul.dropdown{
+    width: auto;
+    background: peachpuff;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+.header2 ul li a:hover{
+    color: red;
+}
+.header2 ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+
+.section-title{
+    font-size:2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color:rgb(255, 79, 79) ;
+}
+
+.topart{
+    position: relative;
+    background:transparent;
+    width: 100%;
+    left: 15rem;
+    top:5rem;
+}
+
+.topart img{
+    position: relative;
+    width:70%;
+    height: 200px;
+}
+
+.topbuut{
+    position: relative;
+   display: inline-flex;
+   width: 100%;
+   justify-content: space-evenly;
+ text-decoration: none;
+}
+.topbuut button{
+position:relative;
+top:2rem;
+width: 10rem;
+border-radius: 6px;
+border:1px solid black;
+background: antiquewhite;
+font-weight: 600;
+}
+.topbuut button:hover{
+    background: peachpuff;
+}
+
+.topbuut button a{
+    text-decoration: none;
+    color:rgb(255, 79, 79) ;
+}
+
+.shop{
+    margin-top:3rem;
+}
+
+/* Shop Content */
+.shop-content{
+    display:grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+}
+
+.shop-content img{
+    width:100%;
+    height:70%;
+    margin-bottom: o.5rem;
+}
+
+.product-box{
+    position: relative;
+}
+
+.product-box:hover{
+    padding:10px;
+    border :1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight:600;
+    text-transform: uppercase;
+    margin-bottom: o.5rem;
+}
+
+.price{
+    font-weight: 500;
+}
+
+.add-cart{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    background: var(--text-color);
+    color:var(--bg-color);
+    cursor:pointer;
+    padding:10px;
+}
+
+.add-car:hover{
+    background: hsl(249,32%,17%);
+}
+
+
+.link{ 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+   }
+   .links ul{
+       list-style: none;
+       background:transparent;
+       font-weight: 500;
+   }
+   .links ul li{
+       display: flex;
+       position: relative;
+       font-size: 20px;
+       font-weight: 900;
+       }
+       .links ul a{
+           position: relative;
+           display:block;
+           padding: 12px 25px;
+           text-decoration: none;
+           color: rgb(83, 80, 80);
+           font-size: 15px;
+           font-weight: 500;
+           left: -130px;
+           top: 50px;
+           font-style: oblique;
+       }
+       .links ul span{
+           position: relative;
+           left:70px;
+           top:-60px;
+       }
+   footer{
+       background: whitesmoke;
+       width: 100%;
+       height: 150px;
+       position: relative;
+       bottom: -153px;
+       border-top: 1px solid black;
+   
+   }
+   
+   footer .social-media a{
+       position: relative;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+       width: 2rem;
+       height: 2rem;
+       background: transparent;
+       border: 1px solid rgba(255, 0, 0, 0.778);
+       border-radius: 50%;
+       font-size: 2rem;
+       color:rgba(255, 0, 0, 0.758);
+     }
+     .social-media a:hover{
+       color:peachpuff;
+       background-color: aqua;
+     }
+     .social-media{
+       position: absolute;
+       bottom:0px;
+       left: 10px;
+       gap:30px;
+     }
+     .footer p{
+     position: absolute;
+     font-size: 1.0rem;
+   bottom:-10px;
+   right:50px;
+   }
+   .paylogo{
+       position: relative;
+       background: white;
+       width:fit-content;
+       bottom: -120px;
+       left: 600px;
+   }
+   .paylogo img{
+   width: 50px;
+   height: 30px;
+   }
+   .paylogo-p{
+       position:relative;
+       left:440px;
+       top: 110px;
+       font-size: 18px;
+   font-weight: 500;
+   font-style: oblique;
+   }
+   
+
+
+
+
+
+@media(max-width:1500px) {
+    
+    
+    .form{
+        position: relative;
+        left: 4rem;
+    }
+    form input{
+    width:15rem;
+    height:2rem;
+    border-radius: 5px;
+    border: none;
+    }
+    
+    form button{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        border: .6px solid;
+    }
+    
+    .header a button{
+        width: 5rem;
+        height:2rem;
+        position: relative;
+        left:10rem;
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    
+.topart{
+    left: 8rem;
+    top:7rem;
+}
+
+.topbuut button{
+top:1rem;
+width: 8rem;
+}
+
+
+
+.links{
+    display: flex;
+    position: relative;
+    left: 1rem;
+    top: 153px;
+}
+.link{ 
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+.links ul{
+    list-style: none;
+    background:transparent;
+    font-weight: 500;
+}
+.links ul li{
+    display: flex;
+    position: relative;
+    font-size: 19px;
+    font-weight: 900;
+    }
+    .links ul a{
+        padding: 12px 0px;
+        font-size: 14px;
+        left: -6rem;
+        
+    }
+footer{
+    height:fit-content;
+    top:10rem ;
+}
+
+footer .social-media a{
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .social-media{
+    position: relative;
+    Top:2rem;
+    left: 10px;
+    gap:30px;
+  }
+  .footer p{
+  position: relative;
+  font-size: 11px;
+ top:4rem;
+  left:50rem;
+}
+.paylogo{
+    position: relative;
+    display: flex;
+    width:80px;
+    top:0;
+    left: 25rem;
+}
+
+.paylogo img{
+width: 50px;
+height: 30px;
+}
+} 
+
+
+
+
+
+@media(max-width:1100px) {
+    
+    
+    .form{
+        position: relative;
+        left: 4rem;
+    }
+    form input{
+    width:15rem;
+    height:2rem;
+    border-radius: 5px;
+    border: none;
+    }
+    
+    form button{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        border: .6px solid;
+    }
+    
+    .header a button{
+        width: 5rem;
+        height:2rem;
+        position: relative;
+        left:10rem;
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    
+.topart{
+    left: 8rem;
+    top:7rem;
+}
+
+.topbuut button{
+top:1rem;
+width: 8rem;
+}
+
+
+.info{
+    display:flex;
+    width: 100%;
+   height: fit-content;
+}
+.info1{
+    width: 350px;
+    height:fit-content ;
+    position: relative;
+    left:6rem;
+}
+.info button{
+    position: relative;
+    top:2rem;
+    left: 14rem;
+}
+
+
+.links{
+    display: flex;
+    position: relative;
+    left: 1rem;
+    top: 153px;
+}
+.link{ 
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+.links ul{
+    list-style: none;
+    background:transparent;
+    font-weight: 500;
+}
+.links ul li{
+    display: flex;
+    position: relative;
+    font-size: 19px;
+    font-weight: 900;
+    }
+    .links ul a{
+        padding: 12px 0px;
+        font-size: 14px;
+        left: -6rem;
+        
+    }
+footer{
+    height:fit-content;
+    top:10rem ;
+}
+
+footer .social-media a{
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .social-media{
+    position: relative;
+    Top:2rem;
+    left: 10px;
+    gap:30px;
+  }
+  .footer p{
+  position: relative;
+  font-size: 11px;
+ top:4rem;
+  left:50rem;
+}
+.paylogo{
+    position: relative;
+    display: flex;
+    width:80px;
+    top:0;
+    left: 25rem;
+}
+
+.paylogo img{
+width: 50px;
+height: 30px;
+}
+} 
+
+
+@media(max-width:800px) {
+    
+    
+    .form{
+        position: relative;
+        left: 4rem;
+    }
+    form input{
+    width:15rem;
+    height:2rem;
+    border-radius: 5px;
+    border: none;
+    }
+    
+    form button{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        border: .6px solid;
+    }
+    
+    .header a button{
+        width: 5rem;
+        height:2rem;
+        position: relative;
+        left:10rem;
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    
+.topart{
+    left: 7rem;
+    top:7rem;
+}
+
+.topbuut button{
+top:1rem;
+width: 8rem;
+}
+
+
+.info{
+    display:block;
+    width: 100%;
+   height: fit-content;
+}
+.info1{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    left:14rem;
+}
+.info button{
+    position: relative;
+    top:2rem;
+    left: 14rem;
+}
+
+
+.links{
+    display: flex;
+    position: relative;
+    left: 1rem;
+    top: 153px;
+}
+.link{ 
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+.links ul{
+    list-style: none;
+    background:transparent;
+    font-weight: 500;
+}
+.links ul li{
+    display: flex;
+    position: relative;
+    font-size: 17px;
+    font-weight: 900;
+    }
+    .links ul a{
+        padding: 12px 0px;
+        font-size: 12px;
+        left: -6rem;
+        
+    }
+footer{
+    height:fit-content;
+    top:10rem ;
+}
+
+footer .social-media a{
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .social-media{
+    position: relative;
+    Top:2rem;
+    left: 10px;
+    gap:30px;
+  }
+  .footer p{
+  position: relative;
+  font-size: 11px;
+ top:4rem;
+  left:30rem;
+}
+.paylogo{
+    position: relative;
+    display: flex;
+    width:80px;
+    top:0;
+    left: 9rem;
+}
+
+.paylogo img{
+width: 50px;
+height: 30px;
+}
+
+.nav-icons{
+    left:3rem;
+}
+.nav-dropdown{
+    left:1.5rem;
+}
+} 
+
+
+@media(max-width:600px) {
+    
+    
+    .form{
+        position: relative;
+        left: 1rem;
+    }
+    form input{
+    width:13rem;
+    height:2rem;
+    border-radius: 5px;
+    border: none;
+    }
+    
+    form button{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        border: .6px solid;
+    }
+    
+    .header a button{
+        width: 5rem;
+        height:2rem;
+        position: relative;
+        left:10rem;
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    
+.topart{
+    left: 5rem;
+    top:7rem;
+}
+
+.topbuut button{
+top:1rem;
+width: 6rem;
+}
+
+
+.info{
+    display:block;
+    width: 100%;
+   height: fit-content;
+}
+.info1{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    left:10rem;
+}
+.info button{
+    position: relative;
+    top:2rem;
+    left: 10rem;
+}
+
+
+.links{
+    display: flex;
+    position: relative;
+    left: 1rem;
+    top: 153px;
+}
+.link{ 
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+.links ul{
+    list-style: none;
+    background:transparent;
+    font-weight: 500;
+}
+.links ul li{
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    }
+    .links ul a{
+        padding: 12px 0px;
+        font-size: 11px;
+        left: -6rem;
+        
+    }
+footer{
+    height:fit-content;
+    top:10rem ;
+}
+
+footer .social-media a{
+    width: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .social-media{
+    position: relative;
+    Top:2rem;
+    left: 10px;
+    gap:30px;
+  }
+  .footer p{
+  position: relative;
+  font-size: 8px;
+ top:4rem;
+  left:23rem;
+}
+.paylogo{
+    position: relative;
+    display: flex;
+    width:80px;
+    top:0;
+    left: 6.5rem;
+}
+
+.paylogo img{
+width: 50px;
+height: 30px;
+}
+
+.nav-icons{
+    left:1rem;
+}
+.nav-dropdown{
+    left:.5rem;
+}
+} 
+
+
+@media(max-width:500px) {
+    
+
+    
+
+.nav-icons{
+    left:1rem;
+}
+.nav-dropdown{
+    left:.5rem;
+}
+    
+    .form{
+        position: relative;
+        left: 0rem;
+    }
+    form input{
+    width:10rem;
+    height:2rem;
+    border-radius: 5px;
+    border: none;
+    }
+    
+    form button{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 4px;
+        border: .6px solid;
+    }
+    
+    .header a button{
+        width: 5rem;
+        height:2rem;
+        position: relative;
+        left:10rem;
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    
+
+    
+.topart{
+    left: 5rem;
+    top:7rem;
+}
+
+.topbuut button{
+top:1rem;
+width: 6rem;
+}
+
+
+.info{
+    display:block;
+    width: 100%;
+   height: fit-content;
+}
+.info1{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    left:6rem;
+}
+.info button{
+    position: relative;
+    top:2rem;
+    left: 6rem;
+}
+
+
+.links{
+    display: flex;
+    background: white;
+    width: 100%;
+    position: relative;
+    left: 1rem;
+    top: 153px;
+    justify-content: center;
+    border-bottom: 1px solid rgba(50, 48, 48, 0.596);
+}
+.link{ 
+ display: flex;
+ justify-content:center;
+ align-items: center;
+}
+.links ul{
+    list-style: none;
+    background:transparent;
+    font-weight: 500;
+}
+.links ul li{
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    font-weight: 900;
+    }
+    .links ul a{
+        padding: 12px 0px;
+        font-size: 10px;
+        left: -6rem;
+        
+    }
+footer{
+    height:fit-content;
+    top:10rem ;
+}
+
+footer .social-media a{
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .social-media{
+    position: relative;
+    Top:2rem;
+    left: 10px;
+    gap:30px;
+  }
+  .footer p{
+  position: relative;
+  font-size: 10px;
+ top:2rem;
+  left:13rem;
+}
+.paylogo{
+    position: relative;
+    display: flex;
+    width:100px;
+    top:0;
+    left: 10rem;
+}
+
+.paylogo img{
+width: 50px;
+height: 30px;
+}
+} 
+
+
+@media(max-width:450px) {
+    
+
+    
+
+    .nav-icons{
+        left:1rem;
+    }
+    .nav-dropdown{
+        left:.5rem;
+    }
+        
+        .form{
+            position: relative;
+            left: 0rem;
+        }
+        form input{
+        width:10rem;
+        height:2rem;
+        border-radius: 5px;
+        border: none;
+        }
+        
+        form button{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 4px;
+            border: .6px solid;
+        }
+        
+        .header a button{
+            width: 5rem;
+            height:2rem;
+            position: relative;
+            left:10rem;
+            background: transparent;
+            border-radius: 4px;
+        }
+    
+        
+    
+        
+    .topart{
+        left: 5rem;
+        top:7rem;
+    }
+    
+    .topbuut button{
+    top:1rem;
+    width: 6rem;
+    }
+    
+    
+    .info{
+        display:block;
+        width: 100%;
+       height: fit-content;
+    }
+    .info1{
+        width: 250px;
+        height: 400px;
+        position: relative;
+        left:6rem;
+    }
+    .info button{
+        position: relative;
+        top:2rem;
+        left: 6rem;
+    }
+    
+    
+    .links{
+        display: flex;
+        background: white;
+        width: 100%;
+        position: relative;
+        left: 1rem;
+        top: 153px;
+        justify-content: center;
+        border-bottom: 1px solid rgba(50, 48, 48, 0.596);
+    }
+    .link{ 
+     display: flex;
+     justify-content:center;
+     align-items: center;
+    }
+    .links ul{
+        list-style: none;
+        background:transparent;
+        font-weight: 500;
+    }
+    .links ul li{
+        display: flex;
+        position: relative;
+        font-size: 15px;
+        font-weight: 900;
+        }
+        .links ul a{
+            padding: 12px 0px;
+            font-size: 10px;
+            left: -6rem;
+            
+        }
+    footer{
+        height:fit-content;
+        top:10rem ;
+    }
+    
+    footer .social-media a{
+        width: 2rem;
+        font-size: 1.5rem;
+      }
+    
+      .social-media{
+        position: relative;
+        Top:2rem;
+        left: 10px;
+        gap:30px;
+      }
+      .footer p{
+      position: relative;
+      font-size: 10px;
+     top:2rem;
+      left:13rem;
+    }
+    .paylogo{
+        position: relative;
+        display: flex;
+        width:100px;
+        top:0;
+        left: 10rem;
+    }
+    
+    .paylogo img{
+    width: 50px;
+    height: 30px;
+    }
+    } 
+
+    @media(max-width:400px) {
+    
+
+    
+
+        .nav-icons{
+            left:1rem;
+        }
+        .nav-dropdown{
+            left:.5rem;
+        }
+            
+            .form{
+                position: relative;
+                left: 0rem;
+            }
+            form input{
+            width:10rem;
+            height:2rem;
+            border-radius: 5px;
+            border: none;
+            }
+            
+            form button{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 4px;
+                border: .6px solid;
+            }
+            
+            .header a button{
+                width: 5rem;
+                height:2rem;
+                position: relative;
+                left:10rem;
+                background: transparent;
+                border-radius: 4px;
+            }
+        
+            
+        
+            
+        .topart{
+            left: 5rem;
+            top:7rem;
+        }
+        
+        .topbuut button{
+        top:1rem;
+        width: 6rem;
+        }
+        
+        
+        .info{
+            display:block;
+            width: 100%;
+           height: fit-content;
+        }
+        .info1{
+            width: 250px;
+            height: 400px;
+            position: relative;
+            left:6rem;
+        }
+        .info button{
+            position: relative;
+            top:2rem;
+            left: 6rem;
+        }
+        .info img{
+            position:absolute;
+            width:80%;
+            height:1.7rem;
+            bottom:105rem;
+            left:2rem
+        }
+        
+        .links{
+            display: flex;
+            background: white;
+            width: 100%;
+            position: relative;
+            left: 1rem;
+            top: 153px;
+            justify-content: center;
+            border-bottom: 1px solid rgba(50, 48, 48, 0.596);
+        }
+        .link{ 
+         display: flex;
+         justify-content:center;
+         align-items: center;
+        }
+        .links ul{
+            list-style: none;
+            background:transparent;
+            font-weight: 500;
+        }
+        .links ul li{
+            display: flex;
+            position: relative;
+            font-size: 15px;
+            font-weight: 900;
+            }
+            .links ul a{
+                padding: 12px 0px;
+                font-size: 10px;
+                left: -6rem;
+                
+            }
+        footer{
+            height:fit-content;
+            top:10rem ;
+        }
+        
+        footer .social-media a{
+            width: 2rem;
+            font-size: 1.5rem;
+          }
+        
+          .social-media{
+            position: relative;
+            Top:2rem;
+            left: 10px;
+            gap:30px;
+          }
+          .footer p{
+          position: relative;
+          font-size: 10px;
+         top:2rem;
+          left:13rem;
+        }
+        .paylogo{
+            position: relative;
+            display: flex;
+            width:100px;
+            top:0;
+            left: 10rem;
+        }
+        
+        .paylogo img{
+        width: 50px;
+        height: 30px;
+        }
+        } 

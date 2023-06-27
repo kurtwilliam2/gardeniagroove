@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/validate.js"></script>
+  
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <nav>
+    <input type="checkbox" name="" id="check" />
+    <label for="check" class="checkbtn">
+      <box-icon name="menu"></box-icon>
+    </label>
+    <label class="Logo">GardeniaGroove</label>
+    <ul>
+      <li><a href="index.html">Flowers</a></li>
+      <li><a href="cakes.html">Cakes</a></li>
+      <li><a href="gifthampers.html">Gift</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <form
+        action="signup.php"
+        class="box form-box"
+        method="post"
+        id="signup"
+        novalidate
+      >
+      <h1>Login</h1>
+     
+         <div  class="field input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div  class="field input">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          
+          <button class="but">SignUp</button>
+        <div class="links">Don't have an account? <a href="singup.html">SignUp Now</a></a></div>
+      </form>
+    </div>
+  </body>
+</html>

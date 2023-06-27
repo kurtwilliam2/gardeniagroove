@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- nav -->
+      <div class="nav container">
+        <a href="#" class="logo">GardeniaGroove</a>
+
+        <form action="search.html" method="GET" class="form">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search flowers,cakes, gifts etc"
+          />
+          <button type="submit" class="sbutton">
+            <span class="iconn"><ion-icon name="search"></ion-icon></span>
+          </button>
+        </form>
+
+        <!-- Nav Icons -->
+        <div class="nav-icons">
+          <a href="index.html"><box-icon name="home"></box-icon></a>
+        </div>
+        <div class="nav-dropdown">
+          <ul class="dropdown">
+            <li>
+              <box-icon name="user-circle"></box-icon>
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="create.html">SignUp</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </div>
+
+        <div class="cart">
+          <h2 class="cart-title">
+            Your Cart
+            <!-- Content -->
+            <div class="cart-content"></div>
+          </h2>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!--  Buy Button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- Cart-Close -->
+          <div class="close-cart">
+            <ion-icon name="return-up-back-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container address">
+      <form action="checkout.php" method="post">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+              <span>full name</span>
+              <input type="text" name="name" placeholder="your name" />
+            </div>
+            <div class="inputBox">
+              <span>email</span>
+              <input type="email" name="email" placeholder="example@example.com" />
+            </div>
+            <div class="inputBox">
+              <span>address</span>
+              <input type="text" name="address" placeholder="room - street" />
+            </div>
+            <div class="inputBox">
+              <span>city</span>
+              <input type="text" name="city" placeholder="Bell Garden" />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>zip code</span>
+                <input type="text" name="zip" placeholder="90201" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="title">payment</h3>
+
+            <div class="inputBox" id="card">
+              <span>cards accepted:</span>
+            <div class="cards">
+                <img src="kk/857_visa.jpg" alt="">
+                <img src="kk/MasterCard_Logo.svg.png" alt="">
+                <img src="kk/png-transparent-amex-card-credit-logo-logos-logos-and-brands-icon.png" alt="">
+                <img src="kk/paypal-ghana.png" alt="">
+
+            </div>
+            </div>
+            <div class="inputBox">
+              <span>name on card:</span>
+              <input type="text"  name="cname" placeholder=" John Ylow" />
+            </div>
+            <div class="inputBox">
+              <span>credit card number:</span>
+              <input type="number" name="cardno" placeholder="1111-2222-3333-4444" />
+            </div>
+           
+            <div class="flex">
+                <div class="inputBox">
+                    <span>exp year:</span>
+                    <input type="number" name="exp" placeholder="2027" />
+                  </div>
+                <div class="inputBox">
+                    <span>exp month:</span>
+                    <input type="text" name="month" placeholder="jan" />
+                  </div>
+                <div class="inputBox">
+                    <span>cvv:</span>
+                    <input type="number" name="vvc" placeholder="999" />
+                  </div>
+            </div>
+        </div>
+
+       <button class="submit"> Safe Checkout</button>
+      </form>
+   
+
+  
+    
+  </div>
+
+
+    </div>
+  </body>
+</html>

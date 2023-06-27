@@ -1,0 +1,170 @@
+*{
+    margin:o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+
+}
+header{
+    position: fixed;
+    display:flex;
+    width: 100%;
+    left: 0;
+    top:0;
+    padding: 5px 10%;
+    justify-content: space-between;
+    background:antiquewhite;
+    z-index: 100;
+    align-items: center;
+}
+.logo p{
+    color: rgb(243, 96, 120);
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 20px;
+    position: relative;
+    left: -80px;
+
+  
+}
+.menu a{
+    position: relative;
+    padding:15px;
+    text-decoration: none;
+    color:rgb(252, 102, 127);
+    font-weight: 600;
+    left: -500px;
+   
+
+}
+.menu  a:hover{
+    color:greenyellow;
+}
+.search-bar{
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: 320px;
+
+}
+.sbutton{
+    width: 27px;
+    height: 25px;
+    background: pink;
+}
+.heade{
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    right: -110px;;
+    top:0px;
+    display:flex;
+    padding:4px;
+}
+.heade  span{
+    justify-content: center;
+    
+}
+.heade h5{
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top:-15px;
+
+}
+.track-icon h5{
+    position:relative;
+    left:-18px;
+}
+.cart-icon{
+    position: relative;
+    top:-1px;
+}
+
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(IMG-20230517-WA0016.jpg); */
+    background: url(kk/IMG-20230517-WA0008.jpg);
+}
+.body{
+
+position: relative;
+top:10px;
+width: 400px;
+height: 600px;
+background: whitesmoke;
+border-radius: 13px;
+justify-content: center;
+align-items: center;
+display: flex;
+color: rgb(251, 105, 130);
+}
+button{
+    width: 80px;
+    height:30px;
+    background: white;
+    color:rgb(254, 101, 127);
+    border:rgb(251, 97, 122) 1px solid;
+    border-radius: 3px;
+}
+button:hover{
+    color:white;
+    background: pink;  
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    color: rgb(248, 111, 134);
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+}
+.input{
+    position: relative;
+    border-bottom:rgb(253, 75, 105) 1px solid;
+    width:320px 0;
+    margin:50px 0;
+}
+.input input{
+    width:100%;
+    height: 25px;
+}
+.input .icon{
+    position: absolute;
+    right:8px;
+    font-size: 1.1em;
+    
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-4px;
+}
+.checkbox{
+    margin:-15px 0 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.btn{
+    position: relative;
+    left:36%;
+
+}
+nav button{
+   
+    position: absolute;
+    top:20px;
+    right: 50px;
+    background: transparent;
+    border-radius: 5px;
+    height: 40px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 600;
+}
+

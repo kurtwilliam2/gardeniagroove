@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers</title>
+    <link rel="stylesheet" href="anniversary.css" />
+      <!-- Box Icons -->
+      <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- nav -->
+      <div class="nav container">
+        <a href="#" class="logo">GardeniaGroove</a>
+
+        <form action="search.html" method="GET" class="form">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search flowers,cakes, gifts etc"
+          />
+          <button type="submit" class="sbutton">
+            <span class="iconn"><ion-icon name="search"></ion-icon></span>
+          </button>
+        </form>
+
+        <!-- Nav Icons -->
+        <div class="nav-icons">
+          <a href="index.html"><box-icon name='home'></box-icon></a>
+        </div>
+        <div class="nav-dropdown">
+          <ul class="dropdown">
+            <li>
+              <box-icon name='user-circle'></box-icon>
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">SignUp</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="cart-indicator">0</span>
+        </div>
+
+
+        <div class="cart">
+          <h2 class="cart-title">
+            Your Cart
+            <!-- Content -->
+            <div class="cart-content"></div>
+          </h2>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!--  Buy Button -->
+          <button type="button" class="btn-buy"><a href="checkout.html">Buy Now</a></button>
+          <!-- Cart-Close -->
+          <div class="close-cart">
+            <ion-icon name="return-up-back-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Second Header -->
+    <div class="header2">
+      <ul>
+        <li>
+          <a href="#">Flowers </a>
+          <ul class="dropdown">
+            <li><a href="allflowers.html">All Flowers</a></li>
+            <li><a href="affordableflowers.html">Affordable Flowers</a></li>
+            <li><a href="exoticflowers.html">Exotic Flowers</a></li>
+            <li><a href="bestseller.html">Best Seller</a></li>
+            <li><a href="luxurycollection.html">Luxury Collection</a></li>
+           
+          </ul>
+        </li>
+        <li>
+          <a href="#">Occasions</a>
+          <ul class="dropdown">
+            <li><a href="birthday.html">Birthday</a></li>
+            <li><a href="annivesary.html">Anniversary</a></li>
+            <li><a href="romance.html">Romance</a></li>
+            <li><a href="Sympathy.html">Sympathy</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Cakes and Gifts</a>
+          <ul class="dropdown">
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="ballons.html">Ballons</a></li>
+            <li><a href="chocolates.html">Chocolates</a></li>
+            <li><a href="gifthampers.html">Gift Hampers</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">By Price</a>
+          <ul class="dropdown">
+            <li><a href="allflowers.html">All Flowers</a></li>
+            <li><a href="under30.html">Under $30</a></li>
+            <li><a href="b30t49.html">$30-$49.99</a></li>
+            <li><a href="b50t79.html">$50-$69.99</a></li>
+            <li><a href="80plus.html">70+</a></li>
+          
+          </ul>
+        </li>
+        <li><a href="#">Apology</a></li>
+      </ul>
+    </div>
+   
+    <!-- Top Art -->
+    <section class="topart">
+      <img src="/kk/ban-1.png" />
+    </section>
+
+    <!-- Navigation Buttons -->
+    <section class="topbuut">
+      <button type="submit"><a href="roses.html">Only Roses</a></button>
+      <button type="submit">
+        <a href="affordableflowers.html">Affordable Flowers</a>
+      </button>
+      <button type="submit">
+        <a href="luxurycollection.html">Luxury Collection</a>
+      </button>
+      <button type="submit"><a href="annivesary.html">Anniversary</a></button>
+    </section>
+
+    <section class="shop container">
+      <h2 class="section-title"> Flowers between $30-$40</h2>
+      <!-- Content -->
+      <div class="shop-content">
+        <!-- Box 1 -->
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0001.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Daisy Parade</h2>
+          <span class="price">$40.29</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0002.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Serene Floral Medley</h2>
+          <span class="price">$38.49</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0003.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Tranquil Wisteria</h2>
+          <span class="price">$40.99</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0004.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Garden of Eden</h2>
+          <span class="price">$43.59</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0005.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Harmonious Hideway</h2>
+          <span class="price">$40.49</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0007.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Frangrant Bazaar</h2>
+          <span class="price">$46.99</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0006.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Tranquil Blossoms</h2>
+          <span class="price">$44.49</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+        <div class="product-box">
+          <img
+            src="Images/All Flowers/IMG-20230620-WA0008.jpg"
+            class="product-img"
+          />
+          <h2 class="product-title">Serendipity Blooms</h2>
+          <span class="price">$48.99</span>
+          <ion-icon name="bag-handle-outline" class="icon add-cart"></ion-icon>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Links -->
+    <section class="links">
+      <div class="link">
+        <ul>
+          <li>Useful links
+            <ul>
+              <li><a href="#"> Terms & Conditions</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#"> About us</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>Flowers
+            <ul>
+              <li><a href="index.html">Next Day Flowers</a></li>
+              <li><a href="birthday.html">Birthday Flowers</a></li>
+              <li><a href="annivesary.html">Anniversary Flowers</a></li>
+              <li><a href="Sympathy.html">Get Well Soon</a></li>
+              <li><a href="Sympathy.html">Sympathy Flowers</a></li>
+              <li><a href="roses.html">Thank You</a></li>
+              <li><a href="bestseller.html">Best Selling Flowers</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+        <ul>
+          <li>Contact</li>
+          Email Us:
+          <ul><li><span><a href="mailto:enquiries@lilyslane.co.us">enquiries@lilyslane.co.us</a></span></li></ul>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Lily's Lane | All Rights Reserved.</p>
+        
+        </div>
+        <div class="social-media">
+          <a><ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a><ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a><ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+      </div>
+        
+         
+      <div class="paylogo">
+        <img src="/kk/857_visa.jpg">
+        <img src="/kk/MasterCard_Logo.svg.png">
+        <img src="/kk/paypal-ghana.png">
+        <img src="/kk/png-transparent-amex-card-credit-logo-logos-logos-and-brands-icon.png">
+        <img src="/kk/Google_Pay_Logo.svg.png">
+        <img src="/kk/5847e97bcef1014c0b5e4824.png">
+        <img src="/kk/clearpay.png">
+      </div>
+    </footer>
+
+    
+  </div>
+
+
+    <!-- Link To Js -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

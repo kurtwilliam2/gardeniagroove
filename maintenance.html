@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gardenia Groove</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="/maintenance.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- nav -->
+      <div class="nav container">
+        <a href="#" class="logo">GardeniaGroove</a>
+
+        <form action="search.html" method="GET" class="form">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search flowers,cakes, gifts etc"
+          />
+          <button type="submit" class="sbutton">
+            <span class="iconn"><ion-icon name="search"></ion-icon></span>
+          </button>
+        </form>
+
+        <!-- Nav Icons -->
+        <div class="nav-icons">
+          <a href="index.html"><box-icon name="home"></box-icon></a>
+        </div>
+        <div class="nav-dropdown">
+          <ul class="dropdown">
+            <li>
+              <box-icon name="user-circle"></box-icon>
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="create.html">SignUp</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </div>
+
+        <div class="cart">
+          <h2 class="cart-title">
+            Your Cart
+            <!-- Content -->
+            <div class="cart-content"></div>
+          </h2>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!--  Buy Button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- Cart-Close -->
+          <div class="close-cart">
+            <ion-icon name="return-up-back-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container body">
+      <img src="/kk/undraw_towing_-6-yy4-svg.png" alt="" />
+      <h1>we're down for Maintenance</h1>
+      <p>
+        Sorry we're are currently not taking orders because our web servers are
+        under maintenance.We are sorry for any inconvenience,we would be back
+        soon.
+      </p>
+
+      <button class="but"><a href="contact.html">Contact U</a>s</button>
+    </div>
+  </body>
+</html>
